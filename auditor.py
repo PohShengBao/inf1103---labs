@@ -1,4 +1,10 @@
 inventory = 0
 failed_entries = 0
 
+while True:
+	entry = input("Enter stock quantity (or type quit): ").strip()
 
+	if entry.lower() == "quit":
+		print(f"Total Units Processed: {inventory}")
+		print(f"Number of Failed/Rejected Entries: {failed_entries}")
+		break

@@ -8,3 +8,8 @@ while True:
 		print(f"Total Units Processed: {inventory}")
 		print(f"Number of Failed/Rejected Entries: {failed_entries}")
 		break
+
+	if not entry.isdigit():
+		print("Error: Please enter a non-negative integer.")
+		failed_entries += 1
+		continue

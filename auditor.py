@@ -13,3 +13,9 @@ while True:
 		print("Error: Please enter a non-negative integer.")
 		failed_entries += 1
 		continue
+		
+	quantity = int(entry)	
+	if quantity < 0:
+		print("Error: Negative stock quantities are not allowed.")
+		failed_entries += 1
+		continue
